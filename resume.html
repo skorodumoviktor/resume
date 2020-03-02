@@ -4,52 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Резюме</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+        
+        html,
+        body {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            background: #ddd;
+            color: rgb(44, 44, 44);
+        }
+
+        a {
+            color: royalblue;
+            text-decoration: none;
+        }
+
+        h1, h3, h4 {
+            font-weight: 500;
+            color: darkslategrey;
+            font-family: "Roboto", sans-serif;
+        }
+
+        h3 {
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: circle;
+        }
+
+        .main {
+            background: white;
+            width: 90%;
+            padding: 30px 40px;
+            margin: 5% auto;
+            border-radius: 2px;
+            -webkit-box-shadow: 0 0 35px -5px rgba(0,0,0,0.5);
+            -moz-box-shadow: 0 0 35px -5px rgba(0,0,0,0.5);
+            box-shadow: 0 0 35px -5px rgba(0,0,0,0.5);
+        }
+
+        #skills-box {
+            display: inline-block;
+            width: 100%;
+        }
+
+        #skills-box > span {
+            color: cadetblue;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Скородумов Виктор</h1>
-    <h4>frontend-разработчик</h4>
+    <div class="main">
+        <h1>Скородумов Виктор</h1>
+        <h4>FrontEnd-разработчик</h4>
 
-    <hr/>
+        <hr/>
 
-    <h3>Ключевые навыки</h3>
-    <ul>
-        <li>JavaScript</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>React</li>
-    </ul>
+        <h3>Ключевые навыки</h3>
+        <div id='skills-box'>
+            <span>JavaScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>React</span>
+        </div>
 
-    <hr/>
-    
-    <h3>Опыт работы</h3>
-    <ul>
-        <li>
-            <a target="blank" href="https://gotrg.com">
-                goTRG
-            </a>
-        </li>
-    </ul>
+        <hr/>
+        
+        <h3>Опыт работы</h3>
+        <ul>
+            <li>
+                2019 г. - настоящее время <br/>
+                <a target="blank" href="https://gotrg.com">
+                    goTRG
+                </a> <br/>
+                Инженер-программист
+            </li>
+        </ul>
 
-    <hr/>
+        <hr/>
 
-    <h3>Образование</h3>
-    <ul>
-        <li>
-            2015-2019 <br/>
-            <b>Санкт-Петербургский Государственный Университет</b> <br/>
-            Физический факультет <br/>
-            Кафедра вычислительной физики <br/>
-            Тема бакалаврской работы: <br/>
-            <a href="https://github.com/skorodumoviktor/bachelor/blob/master/viktor-skorodumov-bachelor.pdf" target="blank">
-                Разработка программного обеспечения для высоковольтных испытаний <br/> 
-                тонко зазорных мюонных камер (эксперимент ATLAS)
-            </a>
-        </li>
-    </ul>
+        <h3>Образование</h3>
+        <ul>
+            <li>
+                2015 - 2019 г. <br/>
+                <b>Санкт-Петербургский Государственный Университет</b> <br/>
+                Физический факультет <br/>
+                Кафедра вычислительной физики <br/>
+                Тема бакалаврской работы: <br/>
+                <a href="https://github.com/skorodumoviktor/bachelor/blob/master/viktor-skorodumov-bachelor.pdf" target="blank">
+                    Разработка программного обеспечения для высоковольтных испытаний <br/> 
+                    тонко зазорных мюонных камер (эксперимент ATLAS)
+                </a>
+            </li>
+        </ul>
 
-    <hr/>
+        <hr/>
 
-    <h3>Системы и технологии</h3>
-    GitLab, BitBucket, Docker, Kubernetes, jQuery, MS SQL Server, Jenkins, TeamCity 
+        <h3>Системы и технологии</h3>
+        GitLab, BitBucket, Docker, Kubernetes, jQuery, MS SQL, Jenkins, TeamCity, ASP.NET
+
+        <hr/>
+
+        <h3>Языки</h3>
+        <ul>
+            <li>Русский - родной</li>
+            <li>Английский - средне-продвинутый</li>
+        </ul>
+
+        <hr/>
+
+        <h3>О себе</h3>
+        Занимаюсь программированием не только на работе, но и в качестве хобби. <br/>
+        Мне нравится изучать новые технологии и успешно применять их в проектах.
+    </div>
 </body>
 </html>
